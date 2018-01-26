@@ -5,7 +5,9 @@ var topics = [];
   //Function with AJAX call to GIPHY; Q parameterc for API link set to search term, limit 10 results
   //Create div with respective still and animate image sources with "data-state", "data-still" and "data-animate" attributes
   function displayWorld() {
-
+    
+    // clear the gifArea 
+  $("#gifArea").empty();
   var x = $(this).data("search");
   console.log(x);
 
@@ -21,6 +23,7 @@ var topics = [];
           console.log(results);
 
           for (var i = 0; i < results.length; i++) {
+
           
           var showDiv = $("<div class='col-3'>");
           var rating = results[i].rating;
@@ -36,7 +39,7 @@ var topics = [];
           showImage.attr("data-animate", defaultAnimatedSrc);
           showDiv.append(p);
           showDiv.append(showImage);
-          
+
           $("#gifArea").prepend(showDiv);
         }
   });
@@ -55,6 +58,7 @@ var topics = [];
   //Function iterates through topics array to display button with array values in "myButtons" section of HTML
   function displayButtons() {
     $("#myButtons").empty();
+    $("#gifArea").empty();
     for (var i = 0; i < topics.length; i++) {
       var a = $('<button class="btn btn-primary">');
       a.attr("id", "show");
