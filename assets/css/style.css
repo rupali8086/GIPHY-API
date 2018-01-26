@@ -8,6 +8,6 @@ label{margin-left:500px;}
 
 #worldSearch {margin: 0 auto;text-align: center;font-family: "Carrois Gothic SC", sans-serif;}
 
-#gifArea {clear: both;display: inline;}
+.col-3{display: inline-table;}
 
 .worldGiphy {padding: 2px;width: 80%;display: inline; }

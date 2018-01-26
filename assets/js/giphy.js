@@ -19,10 +19,10 @@ var topics = [];
         }).done(function(response) {
           var results = response.data;
           console.log(results);
+
           for (var i = 0; i < results.length; i++) {
           
           var showDiv = $("<div class='col-3'>");
-
           var rating = results[i].rating;
           var defaultAnimatedSrc = results[i].images.fixed_height.url;
           var staticSrc = results[i].images.fixed_height_still.url;
@@ -36,8 +36,8 @@ var topics = [];
           showImage.attr("data-animate", defaultAnimatedSrc);
           showDiv.append(p);
           showDiv.append(showImage);
+          
           $("#gifArea").prepend(showDiv);
-
         }
   });
 }
