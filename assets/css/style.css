@@ -1,8 +1,8 @@
 .jumbotron {text-align: center;padding-top: 10px;
-	         padding-bottom: 15px;font-family: "Carrois Gothic SC", sans-serif;margin-top: -50px; }
+	         padding-bottom: 15px;font-family: "Carrois Gothic SC", sans-serif;margin-top: -50px; width: 1000px;height: 232px; }
 
 #topImageL {width: 15%;height: 200px;float: left;margin-left: 20px;}
-label{margin-left:100px;}
+label{margin-left:500px;}
 
 #show {margin-right: 5px;margin-left: 5px;margin-top: 5px;margin-bottom: 5px;}
 
