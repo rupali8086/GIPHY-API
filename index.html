@@ -1,0 +1,61 @@
+<!-- Author : Rupali Meshram - GIPHY API!   -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GIPHY API</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<header class="jumbotron">
+  <img src="assets/Globe.png" id="topImageL">
+  <h1> World Tour with Giphy</h1>
+  <h4>Click the buttons to display GIPHYs <br>Click the GIPHYs to pause and play<br>Search to add more buttons!</h4>
+</header>
+
+<form class="form-inline" id="worldSearch">
+  <div class="form-group">
+    <label for="worldInput">Search here  : : </label>
+    <input type="text" id="worldInput">
+  </div>
+  <!-- Button triggers show to be added -->
+  <input id="addShow" type="submit" value="submit">
+</form>
+
+<div class="row">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="btn btn-primary" id="show" data-search="Unites state of America">Unites state of America</button>
+      <button class="btn btn-primary" id="show" data-search="Canada">Canada</button>
+      <button class="btn btn-primary" id="show" data-search="India">India</button>
+      <button class="btn btn-primary" id="show" data-search="United Kingdom">United Kingdom</button>
+
+      <div id="myButtons"></div>
+    </div> <!--end of button group -->
+  </div> <!--end of container -->
+</div> <!--end of row -->
+
+
+<div class="row">
+  <div class="container">
+      <span><div id="gifArea"></div></span>
+  </div> <!--end of container -->
+</div> <!-- end of row  -->
+
+
+<script type="text/javascript" src="assets/js/giphy.js"></script>
+
+
+</body>
+</html>

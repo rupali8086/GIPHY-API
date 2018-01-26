@@ -1,0 +1,13 @@
+.jumbotron {text-align: center;padding-top: 10px;
+	         padding-bottom: 15px;font-family: "Carrois Gothic SC", sans-serif;margin-top: -50px; }
+
+#topImageL {width: 15%;height: 200px;float: left;margin-left: 20px;}
+label{margin-left:100px;}
+
+#show {margin-right: 5px;margin-left: 5px;margin-top: 5px;margin-bottom: 5px;}
+
+#worldSearch {margin: 0 auto;text-align: center;font-family: "Carrois Gothic SC", sans-serif;}
+
+#gifArea {clear: both;display: inline;}
+
+.worldGiphy {padding: 2px;width: 80%;display: inline; }
